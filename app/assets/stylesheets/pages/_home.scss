@@ -1,1 +1,24 @@
-// Specific CSS for your home-page
+.wrapper-home {
+  position: relative;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.logo-home {
+  & img {
+    width: 130px;
+  }
+}
+
+.icon_scroll {
+position: absolute;
+bottom: 10px;
+& img {
+  width: 20px;
+}
+}
