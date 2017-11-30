@@ -2,16 +2,14 @@ Rails.application.routes.draw do
 
   root to: "pages#accueil"
 
-  get 'pages/accueil'
 
-  get 'pages/restaurant'
+  get 'accueil' => 'pages#accueil'
+  get 'restaurant' => 'pages#restaurant'
+  get 'menu' => 'pages#menu'
+  get 'produits' => 'pages#produits'
+  get 'recettes' => 'pages#recettes'
+  get 'contact' => 'pages#contact'
 
-  get 'pages/menu'
-
-  get 'pages/produits'
-
-  get 'pages/recettes'
-
-  get 'pages/contact'
+  get '*path' => redirect('/')
 
 end
