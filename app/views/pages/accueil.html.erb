@@ -4,43 +4,195 @@
   </div>
 </div>
 
-
-  <div class="row">
-
-    <div class="wrapper_univers" id="home_2">
-      <div class="notre_univers">
+<div class="wrapper_univers" id="home_2">
         <h1>Notre univers</h1>
         <div class="line"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="univers_pics" style="margin: 0px auto;">
-        <div class="verticale_pics" style="background-image: url(<%= image_path 'pic_home3.jpg' %>)">
-        </div>
-        <div class="horizontale_pics">
-          <div class="pic_1" style="background-image: url(<%= image_path 'dessert.jpg' %>)">
-          </div>
-          <div class="pic_2" style="background-image: url(<%= image_path 'pic_home2.jpg' %>)">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+</div>
+
+<section>
+  <!-- <div class="padding-navbar" style="padding-top: 72px;"></div> -->
+
+  <div class="container gal-container">
+
+     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#1">
+          <%= image_tag "pic_home4.jpg" %>
+        </a>
+        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "pic_home4.jpg" %>
+              </div>
+               <!--  <div class="col-md-12 description">
+                  <h4>This is the fifth one on my Gallery</h4>
+                </div> -->
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="wrapper_produits" id="home_2" style="background-color: #fbfbfb;">
-      <div class="nos_produits">
-        <h1>Nos produits</h1>
-        <div class="line"></div>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-      </div>
-      <div class="univers_pics" style="margin: 0px auto;">
-        <div class="horizontale_pics">
-          <div class="pic_1" style="background-image: url(<%= image_path 'dessert.jpg' %>)">
-          </div>
-          <div class="pic_2" style="background-image: url(<%= image_path 'pic_home2.jpg' %>)">
+        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#2">
+          <%= image_tag "pic_home3" %>
+        </a>
+        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "pic_home3" %>
+              </div>
+               <!--  <div class="col-md-12 description">
+                  <h4>This is the third one on my Gallery</h4>
+                </div> -->
+            </div>
           </div>
         </div>
-        <div class="verticale_pics" style="background-image: url(<%= image_path 'pic_home3.jpg' %>)">
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#3">
+          <%= image_tag "pic_home2" %>
+        </a>
+        <div class="modal fade" id="3" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "pic_home2" %>
+              </div>
+                <!-- <div class="col-md-12 description">
+                  <h4>This is the second one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#4">
+          <%= image_tag "dessert.jpg" %>
+        </a>
+        <div class="modal fade" id="4" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "dessert.jpg" %>
+              </div>
+                <!-- <div class="col-md-12 description">
+                  <h4>This is the first one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
 
   </div>
+</section>
+
+<div class="wrapper_produits" id="home_2">
+        <h1>Nos Produits</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+</div>
+
+<section>
+  <!-- <div class="padding-navbar" style="padding-top: 72px;"></div> -->
+
+  <div class="container gal-container">
+
+    <div class="col-md-4 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#5">
+          <%= image_tag "legumes.jpg" %>
+        </a>
+        <div class="modal fade" id="5" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "legumes.jpg" %>
+              </div>
+                <!-- <div class="col-md-12 description">
+                  <h4>This is the first one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#6">
+          <%= image_tag "poissons.jpg" %>
+        </a>
+        <div class="modal fade" id="6" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+               <%= image_tag "poissons.jpg" %>
+              </div>
+                <!-- <div class="col-md-12 description">
+                  <h4>This is the second one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#7">
+          <%= image_tag "viande.jpg" %>
+        </a>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "viande.jpg" %>
+              </div>
+               <!--  <div class="col-md-12 description">
+                  <h4>This is the third one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <a href="#" data-toggle="modal" data-target="#8">
+          <%= image_tag "vins.jpg" %>
+        </a>
+        <div class="modal fade" id="8" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "vins.jpg" %>
+              </div>
+               <!--  <div class="col-md-12 description">
+                  <h4>This is the fifth one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>

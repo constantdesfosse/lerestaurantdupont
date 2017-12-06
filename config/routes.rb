@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'produits' => 'pages#produits'
   get 'recettes' => 'pages#recettes'
   get 'contact' => 'pages#contact'
+  get 'test' => 'pages#test'
 
   get '*path' => redirect('/')
 
