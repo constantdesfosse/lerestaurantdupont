@@ -5,3 +5,21 @@ function FaireClignoterImage (){
 $(document).ready(function(){
     setInterval('FaireClignoterImage()',2000);
 });
+
+$(window).scroll(function() {
+  var pc = $(this).scrollTop() / 700 ;
+    $('.navbar-wagon').css('opacity', 1 - pc);
+});
+
+
+$(window).scroll(function() {
+
+    if ($(this).scrollTop()>800)
+     {
+        $('.navbar-wagon').css({display:'none'});
+     }
+    else
+     {
+      $('.navbar-wagon').css({display:'inline-flex'});
+     }
+ });
