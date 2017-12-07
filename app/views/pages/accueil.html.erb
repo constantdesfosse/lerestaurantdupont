@@ -1,11 +1,12 @@
 <div class="wrapper-home" style="background-image: url(<%= image_path 'home1.jpg' %>)">
+  <%= image_tag 'logo_restaurantdupont.png' %>
   <div class="icon_scroll">
      <i class="fa fa-caret-down" id="icon_scroll" aria-hidden="true"></i>
   </div>
 </div>
 
 <div class="wrapper_univers" id="home_2">
-        <h1>Notre univers</h1>
+        <h1>Notre univers gastronomique</h1>
         <div class="line"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
 </div>
@@ -17,7 +18,7 @@
 
      <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#1">
+        <!-- <a href="#" data-toggle="modal" data-target="#1"> -->
           <%= image_tag "pic_home4.jpg" %>
         </a>
         <div class="modal fade" id="1" tabindex="-1" role="dialog">
@@ -38,7 +39,7 @@
 
         <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#2">
+        <!-- <a href="#" data-toggle="modal" data-target="#2"> -->
           <%= image_tag "pic_home3.jpg" %>
         </a>
         <div class="modal fade" id="2" tabindex="-1" role="dialog">
@@ -59,7 +60,7 @@
 
     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#3">
+        <!-- <a href="#" data-toggle="modal" data-target="#3"> -->
           <%= image_tag "pic_home2.jpg" %>
         </a>
         <div class="modal fade" id="3" tabindex="-1" role="dialog">
@@ -80,7 +81,7 @@
 
     <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#4">
+        <!-- <a href="#" data-toggle="modal" data-target="#4"> -->
           <%= image_tag "dessert.jpg" %>
         </a>
         <div class="modal fade" id="4" tabindex="-1" role="dialog">
@@ -115,7 +116,7 @@
 
     <div class="col-md-4 col-sm-12 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#5">
+        <!-- <a href="#" data-toggle="modal" data-target="#5"> -->
           <%= image_tag "legumes.jpg" %>
         </a>
         <div class="modal fade" id="5" tabindex="-1" role="dialog">
@@ -135,7 +136,7 @@
     </div>
     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#6">
+        <!-- <a href="#" data-toggle="modal" data-target="#6"> -->
           <%= image_tag "poissons.jpg" %>
         </a>
         <div class="modal fade" id="6" tabindex="-1" role="dialog">
@@ -155,7 +156,7 @@
     </div>
     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#7">
+        <!-- <a href="#" data-toggle="modal" data-target="#7"> -->
           <%= image_tag "viande.jpg" %>
         </a>
         <div class="modal fade" id="7" tabindex="-1" role="dialog">
@@ -175,7 +176,7 @@
     </div>
     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <a href="#" data-toggle="modal" data-target="#8">
+        <!-- <a href="#" data-toggle="modal" data-target="#8"> -->
           <%= image_tag "vins.jpg" %>
         </a>
         <div class="modal fade" id="8" tabindex="-1" role="dialog">
@@ -191,6 +192,97 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="wrapper_produits" id="home_2">
+        <h1>Le Lieu</h1>
+        <div class="line"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <div class="col-md-12 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <!-- <a href="#" data-toggle="modal" data-target="#7"> -->
+          <%= image_tag "salle.jpg" %>
+        </a>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
+              <div class="modal-body">
+                <%= image_tag "salle.jpg" %>
+              </div>
+               <!--  <div class="col-md-12 description">
+                  <h4>This is the third one on my Gallery</h4>
+                </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJLkroYkZ1bG6TiYde_yX7F1l_aHKlJI&callback=initMap">
+    </script>
+        <style>
+      #map {
+        height: 100%;
+        width: 100%;
+       }
+    </style>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 47.21526, lng: -1.474949};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 19,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+      </div>
+    </div>
+
+     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box" id="info_restaurant">
+        <h1> Restauraut du Pont </h1>
+        <p>147 rue du Grignon</p>
+        <p>44115 Basse-Goulaine</p>
+        <p>France</p><br>
+        <ul>
+          <li style="color: red;">
+            Lundi: FERMÉ
+          </li>
+          <li>
+            mardi: 12:00 - 13:45, 19:30 - 21:00
+          </li>
+          <li>
+            mercredi: 12:00 - 13:45, 19:30 - 21:00
+          </li>
+          <li>
+            Jeudi: 12:00 - 13:45, 19:30 - 21:00
+          </li>
+          <li>
+            Vendredi: 12:00 - 13:45, 19:30 - 21:00
+          </li>
+          <li>
+          samedi: 19:30 - 21:00
+          </li>
+          <li>
+          dimanche: 12:00 - 13:45
+          </li>
+        </ul><br>
+        <ul>
+          <li>Tél : +33 2 40 03 58 62</li>
+          <li>e-Mail : sask2mc@gmail.com </li>
+        </ul>
       </div>
     </div>
 

@@ -192,3 +192,35 @@ bottom: 5px;
     }
 }
 
+#info_restaurant {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  color: red;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: #000 !important;
+  & h1 {
+    font-size: 20px;
+    margin-top: 0px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+
+  & p {
+    margin-bottom: 2px;
+    font-size: 14px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+  }
+
+  & li {
+    letter-spacing: 0.2em;
+    list-style:none;
+    margin-bottom: 2px;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif !important;
+    text-decoration: none;
+  }
+  & ul {
+    padding-left: 0px;
+  }
+}
