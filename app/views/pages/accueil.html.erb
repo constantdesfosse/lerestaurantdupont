@@ -5,54 +5,118 @@
   </div> -->
 </div>
 
-<div class="wrapper_univers" id="home_2">
-        <h1>Notre univers gastronomique</h1>
-        <div class="line"></div>
-        <p>Nous vous proposons de découvrir une cuisine audacieuse, où les saveurs et les textures sont judicieusement associées.<br><br>
-Dans une ambiance chic et décontractée, laissez-vous séduire par nos mets et vins subtilement pensés pour un voyage culinaire inattendu...</p>
+<div class="wrapper_produits" id="home_2">
+  <h1>Le Lieu</h1>
+  <div class="line"></div>
+  <p>Le Restaurant du Pont, au passé culinaire bien connu des Nantais, nous a séduit par sa situation géographique aux portes du vignoble.<br><br>
+  Doté de deux salles et d'une future terrasse, dans un environnement boisé le long de la Goulaine, cet endroit charmera les gourmets à la recherche d'une cuisine créative et florale.</p>
 </div>
 
 <section>
-  <!-- <div class="padding-navbar" style="padding-top: 72px;"></div> -->
-
   <div class="container gal-container">
 
-     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+    <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#1"> -->
-          <%= image_tag "pic_home4.jpg" %>
-        </a>
-        <div class="modal fade" id="1" tabindex="-1" role="dialog">
+        <%= image_tag "salle.jpg" %>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
-                <%= image_tag "pic_home4.jpg" %>
+                <%= image_tag "salle.jpg" %>
               </div>
-               <!--  <div class="col-md-12 description">
-                  <h4>This is the fifth one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
 
-        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#2"> -->
-          <%= image_tag "pic_home3.jpg" %>
-        </a>
-        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJLkroYkZ1bG6TiYde_yX7F1l_aHKlJI&callback=initMap">
+        </script>
+        <style>
+        #map {
+          height: 100%;
+          width: 100%;
+        }
+        </style>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 47.21526, lng: -1.474949};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box" id="info_restaurant">
+      <h1> Restauraut du Pont </h1>
+      <p>147 rue du Grignon</p>
+      <p>44115 Basse-Goulaine</p>
+      <p>France</p><br>
+      <ul>
+        <li style="color: red;">
+          Lundi: FERMÉ
+        </li>
+        <li>
+          mardi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          mercredi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          Jeudi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          Vendredi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+        samedi: 19:30 - 21:00
+        </li>
+        <li>
+        dimanche: 12:00 - 13:45
+        </li>
+      </ul><br>
+      <ul>
+        <li>Tél : +33 2 40 03 58 62</li>
+        <li>e-Mail : sask2mc@gmail.com </li>
+      </ul>
+    </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrapper_univers" id="home_2">
+  <h1>Notre univers gastronomique</h1>
+  <div class="line"></div>
+  <p>Nous vous proposons de découvrir une cuisine audacieuse, où les saveurs et les textures sont judicieusement associées.<br><br>
+  Dans une ambiance chic et décontractée, laissez-vous séduire par nos mets et vins subtilement pensés pour un voyage culinaire inattendu...</p>
+</div>
+
+<section>
+
+  <div class="container gal-container">
+
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <%= image_tag "pic_home4.jpg" %>
+        <div class="modal fade" id="1" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
-                <%= image_tag "pic_home3.jpg" %>
+                <%= image_tag "pic_home4.jpg" %>
               </div>
-               <!--  <div class="col-md-12 description">
-                  <h4>This is the third one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
@@ -61,19 +125,28 @@ Dans une ambiance chic et décontractée, laissez-vous séduire par nos mets et 
 
     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#3"> -->
-          <%= image_tag "pic_home2.jpg" %>
-        </a>
+        <%= image_tag "pic_home3.jpg" %>
+        <div class="modal fade" id="2" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <%= image_tag "pic_home3.jpg" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <%= image_tag "pic_home2.jpg" %>
         <div class="modal fade" id="3" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                 <%= image_tag "pic_home2.jpg" %>
               </div>
-                <!-- <div class="col-md-12 description">
-                  <h4>This is the second one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
@@ -82,19 +155,13 @@ Dans une ambiance chic et décontractée, laissez-vous séduire par nos mets et 
 
     <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#4"> -->
-          <%= image_tag "dessert.jpg" %>
-        </a>
+        <%= image_tag "dessert.jpg" %>
         <div class="modal fade" id="4" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                 <%= image_tag "dessert.jpg" %>
               </div>
-                <!-- <div class="col-md-12 description">
-                  <h4>This is the first one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
@@ -105,187 +172,72 @@ Dans une ambiance chic et décontractée, laissez-vous séduire par nos mets et 
 </section>
 
 <div class="wrapper_produits" id="home_2">
-        <h1>Nos Produits</h1>
-        <div class="line"></div>
-        <p>Choisis minutieusement tous les jours, nous mettons en avant les produits du terroir et de saison. Nos vins sont également sélectionnés avec attention pour révéler pleinement les arômes de chaque plat.<br><br>
-        Vous serez enchantés par des mariages osés, des cuissons élaborées et des présentations recherchées.</p>
+  <h1>Nos Produits</h1>
+  <div class="line"></div>
+  <p>Choisis minutieusement tous les jours, nous mettons en avant les produits du terroir et de saison. Nos vins sont également sélectionnés avec attention pour révéler pleinement les arômes de chaque plat.<br><br>
+  Vous serez enchantés par des mariages osés, des cuissons élaborées et des présentations recherchées.</p>
 </div>
 
 <section>
-  <!-- <div class="padding-navbar" style="padding-top: 72px;"></div> -->
-
   <div class="container gal-container">
 
     <div class="col-md-4 col-sm-12 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#5"> -->
-          <%= image_tag "legumes.jpg" %>
-        </a>
+        <%= image_tag "legumes.jpg" %>
         <div class="modal fade" id="5" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                 <%= image_tag "legumes.jpg" %>
               </div>
-                <!-- <div class="col-md-12 description">
-                  <h4>This is the first one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#6"> -->
-          <%= image_tag "poissons.jpg" %>
-        </a>
+        <%= image_tag "poissons.jpg" %>
         <div class="modal fade" id="6" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                <%= image_tag "poissons.jpg" %>
               </div>
-                <!-- <div class="col-md-12 description">
-                  <h4>This is the second one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#7"> -->
-          <%= image_tag "viande.jpg" %>
-        </a>
+        <%= image_tag "viande.jpg" %>
         <div class="modal fade" id="7" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                 <%= image_tag "viande.jpg" %>
               </div>
-               <!--  <div class="col-md-12 description">
-                  <h4>This is the third one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
       <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#8"> -->
-          <%= image_tag "vins.jpg" %>
-        </a>
+        <%= image_tag "vins.jpg" %>
         <div class="modal fade" id="8" tabindex="-1" role="dialog">
           <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
               <div class="modal-body">
                 <%= image_tag "vins.jpg" %>
               </div>
-               <!--  <div class="col-md-12 description">
-                  <h4>This is the fifth one on my Gallery</h4>
-                </div> -->
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="wrapper_produits" id="home_2">
-        <h1>Le Lieu</h1>
-        <div class="line"></div>
-        <p>Le Restaurant du Pont, au passé culinaire bien connu des Nantais, nous a séduit par sa situation géographique aux portes du vignoble.<br><br>
-Doté de deux salles et d'une future terrasse, dans un environnement boisé le long de la Goulaine, cet endroit charmera les gourmets à la recherche d'une cuisine créative et florale.</p>
-    </div>
-
-    <div class="col-md-12 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <!-- <a href="#" data-toggle="modal" data-target="#7"> -->
-          <%= image_tag "salle.jpg" %>
-        </a>
-        <div class="modal fade" id="7" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button> -->
-              <div class="modal-body">
-                <%= image_tag "salle.jpg" %>
-              </div>
-               <!--  <div class="col-md-12 description">
-                  <h4>This is the third one on my Gallery</h4>
-                </div> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJLkroYkZ1bG6TiYde_yX7F1l_aHKlJI&callback=initMap">
-    </script>
-        <style>
-      #map {
-        height: 100%;
-        width: 100%;
-       }
-    </style>
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 47.21526, lng: -1.474949};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 12,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
-      </div>
-    </div>
-
-     <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-      <div class="box" id="info_restaurant">
-        <h1> Restauraut du Pont </h1>
-        <p>147 rue du Grignon</p>
-        <p>44115 Basse-Goulaine</p>
-        <p>France</p><br>
-        <ul>
-          <li style="color: red;">
-            Lundi: FERMÉ
-          </li>
-          <li>
-            mardi: 12:00 - 13:45, 19:30 - 21:00
-          </li>
-          <li>
-            mercredi: 12:00 - 13:45, 19:30 - 21:00
-          </li>
-          <li>
-            Jeudi: 12:00 - 13:45, 19:30 - 21:00
-          </li>
-          <li>
-            Vendredi: 12:00 - 13:45, 19:30 - 21:00
-          </li>
-          <li>
-          samedi: 19:30 - 21:00
-          </li>
-          <li>
-          dimanche: 12:00 - 13:45
-          </li>
-        </ul><br>
-        <ul>
-          <li>Tél : +33 2 40 03 58 62</li>
-          <li>e-Mail : sask2mc@gmail.com </li>
-        </ul>
       </div>
     </div>
 
