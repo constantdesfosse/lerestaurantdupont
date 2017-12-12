@@ -6,7 +6,7 @@ gem "font-awesome-sass"
 gem "simple_form"
 gem "autoprefixer-rails"
 gem 'jquery-rails'
-
+gem 'mail_form', '~> 1.5', '>= 1.5.1'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")

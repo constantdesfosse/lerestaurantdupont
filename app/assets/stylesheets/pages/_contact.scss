@@ -1,0 +1,60 @@
+$gold: #9c8e65;
+$darkgrey : #505050;
+
+.container-contact {
+  padding: 5%;
+  font-family: 'Raleway', sans-serif;
+  padding: 0 30% 0;
+  padding-bottom: 4%;
+  padding-top: 5%;
+  display: flex;
+  align-item: center;
+  justify-content: center;
+  min-height: calc(100vh - 162px);
+}
+
+abbr[title="required"] {
+  display: none;
+}
+
+.btn-send {
+  border-style: 1px solid;
+  border-color: #EAEAEA;
+  font-family: 'Raleway', sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+.btn-default:hover {
+    color: white;
+    background-color: #93e3d9;
+    border-color: #93e3d9;
+    transition: 0.5s;
+}
+
+.form-control {
+  border-color: #EAEAEA;
+  box-shadow: none;
+  -webkit-appearance: none;
+  font-family: 'Raleway', sans-serif;
+  color: #505050;
+
+}
+
+label {
+    padding-bottom: 3%;
+
+}
+
+.control-label {
+  color: #505050;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+.form-control:focus {
+    border-color: #93e3d9;
+    outline: 0;
+    box-shadow: none;
+}
