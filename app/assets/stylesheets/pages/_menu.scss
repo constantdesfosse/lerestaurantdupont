@@ -1,0 +1,118 @@
+$liliwhite : #EAEAEA;
+
+
+.box-menus {
+max-width: 500px;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+min-height: 400px;
+padding: 20px;
+border: solid 1px;
+border-color: $liliwhite;
+width:100%;
+margin-top: auto 0;
+& h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 15px;
+  font-style: italic;
+}
+& p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 13px;
+  font-style: italic;
+  color: #58584c;
+}
+& h5 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 12px;
+  font-style: italic;
+  color: #58584c;
+}
+& h1 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 23px;
+}
+& h3 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 18px;
+  color: #9c7e43;
+}
+}
+
+.box-decouverte {
+max-width: 500px;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+padding: 20px;
+border: solid 1px;
+border-color: $liliwhite;
+width:100%;
+margin-top: auto 0;
+& h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 15px;
+  font-style: italic;
+}
+& p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 13px;
+  font-style: italic;
+  color: #58584c;
+}
+& h5 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 12px;
+  font-style: italic;
+  color: #58584c;
+}
+& h1 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 23px;
+}
+& h3 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 18px;
+  color: #9c7e43;
+}
+}
+
+.box-event {
+max-width: 500px;
+text-transform: uppercase;
+letter-spacing: 0.3em;
+padding: 20px;
+width:100%;
+margin-top: auto 0;
+& h4 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 15px;
+  font-style: italic;
+  color: #fff;
+}
+& p {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 13px;
+  font-style: italic;
+  color: #fff;
+}
+& h5 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 12px;
+  font-style: italic;
+  color: #fff;
+}
+& h1 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 23px;
+  color: #fff;
+}
+& h3 {
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 18px;
+  color: #ffd480;
+}
+}
+
+.plats {
+  text-align: center;
+}

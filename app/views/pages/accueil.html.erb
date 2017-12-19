@@ -1,101 +1,18 @@
-<div class="wrapper-home" style="background-image: url(<%= image_path 'home1.jpg' %>); background-attachment: fixed;">
+<div class="wrapper-home" style="padding-top:200px;flex-direction: column; background-image: url(<%= image_path 'home1.jpg' %>); background-attachment: fixed;">
   <%= image_tag 'logo_restaurantdupont.png', :id => "logohome" %>
-  <!-- <div class="icon_scroll">
-     <i class="fa fa-caret-down" id="icon_scroll" aria-hidden="true"></i>
-  </div> -->
-</div>
-
-<div class="wrapper_produits" id="home_2">
-  <h1>Le Lieu</h1>
-  <div class="line"></div>
-  <p>Le Restaurant du Pont, au passé culinaire bien connu des Nantais, nous a séduit par sa situation géographique aux portes du vignoble.<br><br>
-  Doté de deux salles et d'une future terrasse, dans un environnement boisé le long de la Goulaine, cet endroit charmera les gourmets à la recherche d'une cuisine créative et florale.</p>
-</div>
-
-<section>
-  <div class="container gal-container">
-
-    <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
-      <div class="box">
-        <%= image_tag "salle.jpg" %>
-        <div class="modal fade" id="7" tabindex="-1" role="dialog">
-          <div class="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <%= image_tag "salle.jpg" %>
-              </div>
-            </div>
-          </div>
-        </div>
+  <section>
+  <div class="col-md-8 col-sm-8 co-xs-12 gal-item col-centered">
+      <div class="box" id="info_restaurant_contact" style="padding-top: 40px;">
+        <p style="background-color: #fff">Fermeture du 24 au 27 Décembre 2017 et du 2 au 8 Janvier 2018</p>
       </div>
     </div>
-
-    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
-      <div class="box">
-        <script async defer
-          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJLkroYkZ1bG6TiYde_yX7F1l_aHKlJI&callback=initMap">
-        </script>
-        <style>
-        #map {
-          height: 100%;
-          width: 100%;
-        }
-        </style>
-        <div id="map"></div>
-        <script>
-          function initMap() {
-            var uluru = {lat: 47.21526, lng: -1.474949};
-            var map = new google.maps.Map(document.getElementById('map'), {
-              zoom: 12,
-              center: uluru
-            });
-            var marker = new google.maps.Marker({
-              position: uluru,
-              map: map
-            });
-          }
-        </script>
-      </div>
-    </div>
-
-    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
-    <div class="box" id="info_restaurant">
-      <h1> Restauraut du Pont </h1>
-      <p>147 rue du Grignon</p>
-      <p>44115 Basse-Goulaine</p>
-      <p>France</p><br>
-      <ul>
-        <li style="color: red;">
-          Lundi: FERMÉ
-        </li>
-        <li>
-          mardi: 12:00 - 13:45, 19:30 - 21:00
-        </li>
-        <li>
-          mercredi: 12:00 - 13:45, 19:30 - 21:00
-        </li>
-        <li>
-          Jeudi: 12:00 - 13:45, 19:30 - 21:00
-        </li>
-        <li>
-          Vendredi: 12:00 - 13:45, 19:30 - 21:00
-        </li>
-        <li>
-        samedi: 19:30 - 21:00
-        </li>
-        <li>
-        dimanche: 12:00 - 13:45
-        </li>
-      </ul><br>
-      <ul>
-        <li>Tél : +33 2 40 03 58 62</li>
-        <li>e-Mail : sask2mc@gmail.com </li>
-      </ul>
-    </div>
-    </div>
-
-  </div>
 </section>
+  <div class="icon_scroll">
+     <i class="fa fa-caret-down" id="icon_scroll" aria-hidden="true"></i>
+  </div>
+</div>
+
+
 
 <div class="wrapper_univers" id="home_2">
   <h1>Notre univers gastronomique</h1>
@@ -239,6 +156,98 @@
           </div>
         </div>
       </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="wrapper_produits" id="home_2">
+  <h1>Le Lieu</h1>
+  <div class="line"></div>
+  <p>Le Restaurant du Pont, au passé culinaire bien connu des Nantais, vous séduira par sa situation géographique aux portes du vignoble.<br><br>
+  Doté de deux salles et d'une future terrasse, dans un environnement boisé le long de la Goulaine, cet endroit charmera les gourmets à la recherche d'une cuisine créative et florale.</p>
+</div>
+
+<section>
+  <div class="container gal-container">
+
+    <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
+      <div class="box">
+        <%= image_tag "salle.jpg" %>
+        <div class="modal fade" id="7" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-body">
+                <%= image_tag "salle.jpg" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-8 col-sm-6 co-xs-12 gal-item">
+      <div class="box">
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnJLkroYkZ1bG6TiYde_yX7F1l_aHKlJI&callback=initMap">
+        </script>
+        <style>
+        #map {
+          height: 100%;
+          width: 100%;
+        }
+        </style>
+        <div id="map"></div>
+        <script>
+          function initMap() {
+            var uluru = {lat: 47.21526, lng: -1.474949};
+            var map = new google.maps.Map(document.getElementById('map'), {
+              zoom: 12,
+              center: uluru
+            });
+            var marker = new google.maps.Marker({
+              position: uluru,
+              map: map
+            });
+          }
+        </script>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+    <div class="box" id="info_restaurant">
+      <h1> Restauraut du Pont </h1>
+      <p>147 rue du Grignon</p>
+      <p>44115 Basse-Goulaine</p>
+      <p>France</p><br>
+      <ul>
+        <li style="color: red;">
+          Lundi: FERMÉ
+        </li>
+        <li>
+          mardi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          mercredi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          Jeudi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+          Vendredi: 12:00 - 13:45, 19:30 - 21:00
+        </li>
+        <li>
+        samedi: 19:30 - 21:00
+        </li>
+        <li>
+        dimanche: 12:00 - 13:45
+        </li>
+      </ul><br>
+      <ul>
+        <li>Tél : +33 2 40 03 58 62</li>
+        <li>e-Mail : sask2mc@gmail.com </li>
+      </ul>
+    </div>
     </div>
 
   </div>
