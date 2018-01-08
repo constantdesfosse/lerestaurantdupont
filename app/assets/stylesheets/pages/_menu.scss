@@ -40,6 +40,7 @@ margin-top: auto 0;
 }
 
 .box-decouverte {
+margin: auto 0;
 max-width: 500px;
 text-transform: uppercase;
 letter-spacing: 0.3em;
@@ -47,7 +48,6 @@ padding: 20px;
 border: solid 1px;
 border-color: $liliwhite;
 width:100%;
-margin-top: auto 0;
 & h4 {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 15px;
