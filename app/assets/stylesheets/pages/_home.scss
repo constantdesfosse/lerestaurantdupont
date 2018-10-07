@@ -1,3 +1,21 @@
+.btn-visite {
+  border-radius: 10px;
+  background-color: #FFAB00;
+  color: white !important;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  transition: 0.5s;
+}
+
+.btn-visite:hover {
+    border-style: 1px solid;
+    border-color: #FFAB00;
+    color: #FFAB00 !important;
+    background-color: white;
+    transition: 0.5s;
+}
+
 .wrapper-home {
   padding-top: 0px !important;
   position: relative;
@@ -225,5 +243,11 @@ bottom: 5px;
   }
   & ul {
     padding-left: 0px;
+  }
+}
+
+#visite {
+  p {
+    color: green;
   }
 }
