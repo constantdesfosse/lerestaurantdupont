@@ -78,6 +78,8 @@ width:100%;
 }
 
 .box-event {
+border: solid 1px;
+border-color: $liliwhite;
 margin: 0px auto;
 background-size: cover;
 max-width: 500px;
@@ -89,19 +91,19 @@ width:100%;
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 15px;
   font-style: italic;
-  color: #fff;
+  color: #58584c;
 }
 & p {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 13px;
   font-style: italic;
-  color: #fff;
+  color: #58584c;
 }
 & h5 {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 15px;
   font-style: italic;
-  color: #fff;
+  color: #58584c;
 }
 & h1 {
   font-family: 'Source Sans Pro', sans-serif !important;
