@@ -11,6 +11,13 @@ border: solid 1px;
 border-color: $liliwhite;
 width:100%;
 margin-top: 0px auto;
+& h6 {
+  letter-spacing: 0.2em;
+  text-transform: none;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 11px;
+  font-style: italic;
+}
 & h4 {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 15px;
@@ -49,6 +56,13 @@ padding: 20px;
 border: solid 1px;
 border-color: $liliwhite;
 width:100%;
+& h6 {
+  letter-spacing: 0.2em;
+  text-transform: none;
+  font-family: 'Source Sans Pro', sans-serif !important;
+  font-size: 11px;
+  font-style: italic;
+}
 & h4 {
   font-family: 'Source Sans Pro', sans-serif !important;
   font-size: 15px;
