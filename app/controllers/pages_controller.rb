@@ -8,7 +8,7 @@ class PagesController < ApplicationController
   def menu
   end
 
-  def produits
+  def boncadeau
   end
 
   def recettes

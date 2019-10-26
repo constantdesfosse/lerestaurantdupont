@@ -8,7 +8,7 @@ Rails.application.routes.draw do
   get 'accueil' => 'pages#accueil'
   get 'restaurant' => 'pages#restaurant'
   get 'menu' => 'pages#menu'
-  # get 'produits' => 'pages#produits'
+  get 'boncadeau' => 'pages#boncadeau'
   # get 'recettes' => 'pages#recettes'
   get 'contact' => 'pages#contact'
   # get 'test' => 'pages#test'

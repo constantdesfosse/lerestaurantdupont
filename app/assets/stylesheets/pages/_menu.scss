@@ -134,3 +134,13 @@ width:100%;
 .plats {
   text-align: center;
 }
+.ici {
+  transition: 0.5s;
+  color: #000 !important;
+  font-size: 14px !important;
+}
+.ici:hover {
+  transition: 0.5s;
+  color: #FFAC00 !important;
+  text-decoration: none;
+}

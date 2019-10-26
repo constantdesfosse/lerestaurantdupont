@@ -1,0 +1,37 @@
+<% content_for :meta_title, "Bon Cadeau - Restaurant du Pont - Basse-Goulaine" %>
+<% content_for :meta_description, "Surprenez vos proches à l'occasion d'un anniversaire, d'une fête ou simplement pour le plaisir d'orffrir" %>
+
+<div class="container">
+<div class="row" style="padding-top: 80px;text-align: center;">
+  <section>
+
+<%= image_tag 'boncadeau.jpg', :id => "logogif", class:'responsive', alt:"Bon Cadeau - Le Restaurant du Pont" %>
+
+
+<!--     <div class="container gal-container">
+
+      <div class="col-md-6 col-sm-4 co-xs-4 gal-item">
+        <div class="box">
+          <%= image_tag "boncadeau.jpg" %>
+          <div class="modal fade" id="7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <%= image_tag "boncadeau.jpg" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  </section>
+  <p style="padding:25px;letter-spacing: 0.3em;text-transform: uppercase; font-family: 'Source Sans Pro', sans-serif !important; font-size: 15px;">Surprenez vos proches à l'occasion d'un anniversaire, d'une fête ou simplement pour le plaisir d'offrir.<br><br>
+Bon cadeau à partir de 20€/personne, valable 1 an.<br><br>
+Contact tél au 02 40 03 58 62 ou par message <%= link_to new_contact_path, class: "ici" do %>
+      <%= t ".", default: "ici"   %>
+    <% end %></p>
+
+  </div>
+</div>
+</div>
