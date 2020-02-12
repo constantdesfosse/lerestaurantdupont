@@ -50,7 +50,7 @@
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
        <!-- Links -->
-    <%= link_to accueil_path, class: "navbar-wagon-item navbar-wagon-link" do %>
+ <%= link_to accueil_path, class: "navbar-wagon-item navbar-wagon-link" do %>
       <%= t ".", default: "Accueil"   %>
     <% end %>
     <%= link_to restaurant_path, class: "navbar-wagon-item navbar-wagon-link" do %>
@@ -59,8 +59,11 @@
     <%= link_to menu_path, class: "navbar-wagon-item navbar-wagon-link" do %>
       <%= t ".", default: "Menus"   %>
     <% end %>
+    <%= link_to boncadeau_path, class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t ".", default: "Bon Cadeau"   %>
+    <% end %>
     <%= link_to new_contact_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t ".", default: "Contact"   %>
+      <%= t ".", default: "Réservation"   %>
     <% end %>
       </ul>
     </div>
