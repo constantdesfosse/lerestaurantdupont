@@ -40,7 +40,7 @@
         </ul><br>
         <ul>
           <li>Tél : 02 40 03 58 62</li>
-          <li>e-Mail : sask2mc@gmail.com </li>
+          <li>e-Mail : contact@restaurant-du-pont.fr </li>
         </ul>
       </div>
     </div>
@@ -52,7 +52,7 @@
       <%= simple_form_for @contact, :html => {:class => 'form-horizontal' } do |f| %>
       <%= f.input :nom, :required => true %>
       <%= f.input :email, :required => true %>
-      <%= f.input :telephone, :placeholder => '0634567890' %>
+      <%= f.input :telephone, :placeholder => ""%>
       <%= f.input :message, :as => :text, :required => true %>
       <div class= "hidden">
         <%= f.input :nickname, :hint => 'Leave this field blank!' %>
