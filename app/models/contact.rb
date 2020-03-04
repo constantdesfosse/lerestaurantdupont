@@ -1,6 +1,6 @@
 class Contact < MailForm::Base
   attribute :nom,      :validate => true
-  attribute :telephone,      :validate => /\A\d{10}\z/
+  attribute :telephone,      :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :message
   attribute :nickname,  :captcha  => true
