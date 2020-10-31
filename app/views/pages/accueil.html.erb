@@ -1,16 +1,15 @@
 <div class="wrapper-home" style="padding-top:400px;flex-direction: column; background-image: url(<%= image_path 'n1-2019.jpg' %>); background-attachment: fixed;">
-  <div style="padding-top: 0px;">
+  <div style="padding-top: 130px;">
     <%= image_tag 'logo_restaurantdupont_60.png', :id => "logohome" %>
   </div>
   <section>
+  <a style="text-decoration: none;" href="http://www.restaurant-du-pont.fr/platsaemporter">
   <div class="col-xs-12 gal-item col-centered">
       <div class="box" id="info_restaurant_contact" style="padding-top: 40px;">
-        <p style="background-color: #fff; padding: 10px;">Service de livraison et à emporter disponible<br><br> entrée plat dessert à partir de 19 euros<br><br>Disponible du lundi au dimanche</p><br>
-        <%= link_to platsaemporter_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t ".", default: ""   %>
-    <% end %>
+        <p style="background-color: #54bb87d6; padding: 20px;color:white;font-size: 25px;">NOS VENTES A EMPORTER ET LIVRAISONS DISPONIBLES 7J/7 EN CLIQUANT ICI
       </div>
   </div>
+</a>
 </section>
   <div class="icon_scroll">
      <i class="fa fa-caret-down" id="icon_scroll" aria-hidden="true"></i>
