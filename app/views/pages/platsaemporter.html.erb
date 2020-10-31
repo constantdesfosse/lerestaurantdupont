@@ -1,0 +1,156 @@
+<% content_for :meta_title, "Menus - Restaurant du Pont - Basse-Goulaine" %>
+<% content_for :meta_description, "Nos menus sont exclusivement basés sur des produits frais et harmonieusement inspirés par notre cave." %>
+
+<div class="container">
+<div class="row" style="padding-top: 80px;text-align: center;">
+  <section>
+    <div class="container gal-container">
+
+      <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
+        <div class="box">
+          <%= image_tag "menus.jpg" %>
+          <div class="modal fade" id="7" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <%= image_tag "menus.jpg" %>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <p style="padding:25px; font-family: 'Source Sans Pro', sans-serif !important; font-size: 17px;">CONDITIONS DE COMMANDE : <br><br>
+Vente à emporter du lundi au dimanche midi et soir : commande avant 11h ou avant 18h.<br><br>
+Livraison possible du lundi au dimanche (minimum de commande 25€) : commande avant 11h ou avant 15h (communes de BASSE-GOULAINE / HAUTE-GOULAINE / SAINT-SEBASTIEN / VERTOU / REZE / SAINTE-LUCE  - Pour les autres communes, nous consulter)<br><br>
+
+COMMANDE : <br><br>
+1 – Je choisis mes plats et mon mode de retrait : À EMPORTER ou EN LIVRAISON (merci de préciser vos coordonnées : nom, prénom, N° tél, mail et adresse postale)<br><br>
+2 – Je passe ma commande par tél  02.40.03.58.62 ou par mail : <A HREF="mailto:contact@restaurant-du-pont.fr">contact@restaurant-du-pont.fr</A> ou via le formulaire sur cette page : <%= link_to new_contact_path, class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t ".", default: "CONTACT ET RESERVATION"   %>
+    <% end %></p>
+
+<!--
+  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col col-centered">
+    <div class="box-event" style="background-image: url(<%= image_path 'mother.jpg' %>);min-height: 601.31px;margin-bottom: 30px;">
+      <h1>La fête des mères
+</h1>
+      <h4>50€<br>
+</h4>
+      <div class="plats" style="margin-top: 40px;" >
+        <h3>Le mi-cuit de thon…</h3>
+        <p>Petits pois, menthe, sésame wasabi</p>
+        <h3>Le filet de rouget…</h3>
+        <p>Cuisson à l’unilatéral, risotto combawa, émulsion de coquillages parfumée à la rose</p>
+        <h3>La canette de Barbarie…</h3>
+        <p>Marinée à l’huile de noisettes, nectarine, coriandre</p>
+        <h3>Douceur violette rhubarbe</h3>
+        <h3>Les fruits de la passion / thé noir…</h3>
+        <p>Chibouste fruits de la passion, financier au thé noir, croquant au poivre</p>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="menu" style="display: flex; align-items: center; flex-direction: column; justify-content: center; text-align: center; margin: 0 auto;">
+
+ <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="box-menus" style="margin-bottom: 30px; margin: 0px auto;">
+  <h1>LES ENTRÉES*…</h1>
+
+        <div class="plats" style="margin-top: 40px;" >
+          <h3>1. Le velouté du jour 4.50€</h3>
+          <p>Noisette de beurre d’algues, chips de sarrasin (végétarien)</p>
+          <h3>2. Le saumon mariné 4.50€</h3>
+          <p>Blanc-manger de corail, chou fleur, fruits de la passion</p>
+          <h3>3. La tourte de canard 7€</h3>
+          <p>Crème de cèpes et pignons de pin</p>
+          <h3>4. Le cromesquis de lingots blancs 7€</h3>
+          <p>Fruits secs et velouté de fèves (végétarien)</p>
+          <h3>5. Le marbré de foie gras 9€</h3>
+          <p>Comme un Opéra, agrumes</p>
+          <h3>6. La cassolette de Saint-Jacques 9€</h3>
+          <p>Poireau, clémentine, chorizo</p>
+          <h6>*Pour la liste des allergènes, nous consulter.</h6>
+        </div>
+      </div>
+    </div>
+
+     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="box-menus" style="margin-bottom: 30px; margin: 0px auto;">
+  <h1>LES PLATS*…</h1>
+
+        <div class="plats" style="margin-top: 40px;" >
+          <h3>7. Les joues de porc confites au miel 9.50€</h3>
+          <p>Polenta fumée, carotte fane</p>
+          <h3>8. La pêche du jour       9.50€</h3>
+          <p>Écrasé aux herbes, crème corail arabica</p>
+          <h3>9. Le curry végétarien (végétarien)      10€</h3>
+          <h3>10. La truffade de Curé Nantais   13€</h3>
+          <p>Dés de cochon breton au poivre fumé</p>
+          <h3>11. Le médaillon de lotte grillé au satay 13€</h3>
+          <p>Risotto au lait de coco</p>
+          <h3>12. Le filet de bœuf mariné au yuzu 17€</h3>
+          <p>Gratin de pommes de terre et girolles</p>
+          <h3>13. Le dos de bar sauvage     17€</h3>
+          <p>Crumble potimarron, coulis homardine</p>
+          <h6>*Pour la liste des allergènes, nous consulter.</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="box-menus" style=";margin-bottom: 30px; margin: 0px auto;">
+  <h1>LES DESSSERTS*…</h1>
+
+        <div class="plats" style="margin-top: 40px;" >
+          <h3>14. Le délice fruits exotiques    5€</h3>
+          <p>Noix de coco</p>
+          <h3>15. Le parfait tout chocolat      5€</h3>
+          <p>Crème pralinée</p>
+          <h3>16. La panna cotta au foin      5€</h3>
+          <p>Butternut et cookie noisettes</p>
+          <h3>17. Le crumble de poire Nashi   5 €</h3>
+          <p>Chocolat blond, clou de cannelier</p>
+          <h6>*Pour la liste des allergènes, nous consulter.</h6>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="box-menus" style=";margin-bottom: 30px; margin: 0px auto;">
+  <h1>POUR L’APERITIF…</h1>
+
+        <div class="plats" style="margin-top: 40px;" >
+          <h3>Le nougat de chèvre frais (Ferme du Hallay) 6.50€ les 180gr (3/4 pers)</h3>
+          <h3>La coque de confit de canard      1€ pièce</h3>
+          <h3>Les rillettes de canard maison      6.50€ les 200gr</h3>
+        </div>
+      </div>
+    </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
+      <div class="box-menus" style=";margin-bottom: 30px; margin: 0px auto;">
+  <h1>LA CAVE… Blanc, Rosé, Rouge</h1>
+
+        <div class="plats" style="margin-top: 40px;" >
+          <h3>SAUMUR / Domaine GUIBERTEAU  2018       18€</h3>
+          <h3>CROZES HERMITAGE / Maison CHAPOUTIER  2017      21€</h3>
+          <h3>MUSCADET « Ponceau » / Domaine LANDRON CHARTIER  2013 25€</h3><br>
+          <h3>MENETOU-SALON / Isabelle & Pierre CLEMENT  2019  (Rosé)   20€</h3><br>
+          <h3>CHINON « L’Arpenty » / Famille DESBOURDES  2019   14€</h3>
+          <h3>GAILLAC « Peyrouzelles » / Famille LESCARET  2017   16€</h3>
+          <h3>VACQUEYRAS / Maison ARNOUX & FILS  2017     18€</h3>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+</div>
+</div>

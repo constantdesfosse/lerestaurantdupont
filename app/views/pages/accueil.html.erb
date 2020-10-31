@@ -2,13 +2,16 @@
   <div style="padding-top: 0px;">
     <%= image_tag 'logo_restaurantdupont_60.png', :id => "logohome" %>
   </div>
-<!--   <section>
+  <section>
   <div class="col-xs-12 gal-item col-centered">
       <div class="box" id="info_restaurant_contact" style="padding-top: 40px;">
-        <p style="background-color: #fff; padding: 10px;">Nous sommes en congés du 1er au 24 août, réouverture le 25 à midi.</p>
+        <p style="background-color: #fff; padding: 10px;">Service de livraison et à emporter disponible<br><br> entrée plat dessert à partir de 19 euros<br><br>Disponible du lundi au dimanche</p><br>
+        <%= link_to platsaemporter_path, class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t ".", default: ""   %>
+    <% end %>
       </div>
   </div>
-</section> -->
+</section>
   <div class="icon_scroll">
      <i class="fa fa-caret-down" id="icon_scroll" aria-hidden="true"></i>
   </div>

@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources "contacts", only: [:new, :create]
 
   get 'accueil' => 'pages#accueil'
+  get 'platsaemporter' => 'pages#platsaemporter'
   get 'restaurant' => 'pages#restaurant'
   get 'menu' => 'pages#menu'
   get 'boncadeau' => 'pages#boncadeau'

@@ -11,11 +11,14 @@
     <%= link_to accueil_path, class: "navbar-wagon-item navbar-wagon-link" do %>
       <%= t ".", default: "Accueil"   %>
     <% end %>
+    <%= link_to platsaemporter_path, class: "navbar-wagon-item navbar-wagon-link" do %>
+      <%= t ".", default: "Livraison et à emporter"   %>
+    <% end %>
     <%= link_to restaurant_path, class: "navbar-wagon-item navbar-wagon-link" do %>
       <%= t ".", default: "Restaurant"   %>
     <% end %>
     <%= link_to menu_path, class: "navbar-wagon-item navbar-wagon-link" do %>
-      <%= t ".", default: "Menus"   %>
+      <%= t ".", default: "Menus (indisponible)"   %>
     <% end %>
     <%= link_to boncadeau_path, class: "navbar-wagon-item navbar-wagon-link" do %>
       <%= t ".", default: "Bon Cadeau"   %>

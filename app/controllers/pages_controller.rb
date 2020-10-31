@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def accueil
   end
 
+  def platsaemporter
+  end
+
   def restaurant
   end
 
