@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 ruby '3.0.1'
+gem 'ransack', '~> 2.1'
 gem "bootstrap-sass"
 gem "font-awesome-sass"
 gem "simple_form"
